@@ -1,19 +1,43 @@
-<style> 
-    p {
-        text-align:center;
-        color: aqua;
-    }
-    #kalimat {
-        text-align: left;
-        color:red;
-    }
-    .center {
-        text-align: center;
-        color: chocolate;
-    }
-    p.tengah{
-        text-align: center;
-        color: darkmagenta; 
-        display: block;
-        background-color: #777777;   }
-</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Selectors</title>
+    <style> 
+        p {
+            text-align:center;
+            color: aqua;
+            border: 2px ;
+            padding:5px;
+        }
+        #kalimat {
+            text-align: left;
+            color:red;
+            border: 6px ;
+            padding:7px;
+        }
+        .center {
+            text-align: center;
+            color: chocolate;
+            border: 6px  ;
+            padding:4px;
+        }
+        p.tengah{
+            text-align: center;
+            color: darkmagenta; 
+            display: block;
+            background-color: #777777;
+            order: 1px  ;
+            padding:9px;   }
+    </style>
+</head>
+<body>
+   <p>Penggunaan CSS sangat membantu webcdesiner dalam menyusun halaman yang konsisten pada 
+    proyek pembuatan webss
+   </p>
+   <p id="kalimat"> Dalam penulisan CSS sangat sederhana namun poerfull dalam desain</p>
+   <p class="center"> CSS mempunyai sifat pewarisan secara defauld style anak akan mewarisi style dari perent 
+    kecuali anak mendiskripsikan stylenya sendiri
+   </p>
+   <p class="tengah"> Ini adalah hasil selector dengan elemen p dengan class tengah</p>
+</body>
+</html>
